@@ -6,7 +6,8 @@
   "name": "minimalist-portfolio",
   "main": "index.html",
   "scripts": {
-    "build": "npx gulp production"
+    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
   },
   "license": "ISC",
   "optionalDependencies": {},

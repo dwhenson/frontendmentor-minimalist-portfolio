@@ -1,7 +1,7 @@
 // /*   Navigation
 //      ================================================== */
 .site-head {
-  padding-block: 3rem;
+  padding-block: calc(var(--spacer) * 3);
 }
 
 .site-head__inner {

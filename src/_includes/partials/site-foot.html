@@ -1,6 +1,6 @@
 <footer class="site-foot">
   <nav class="navigation" aria-label="secondary navigation">
-    <ul class="nav__list">
+    <ul role="list">
       {% for item in navigation.items %}
       <li>
         <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
@@ -8,7 +8,7 @@
       {% endfor %}
     </ul>
   </nav>
-  <ul>
+  <ul role="list">
     <li><a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
           <path fill="#33323D"

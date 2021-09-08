@@ -2,7 +2,7 @@
 $min: 1rem;
 $max: 1440px;
 
-.center-content {
+.align-content {
   display: grid;
   grid-template-rows: min-content;
   grid-template-columns: minmax($min, 1fr) minmax($min, $max) minmax($min, 1fr);

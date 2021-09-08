@@ -4,13 +4,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: var(--bespoke-gap, var(--spacer));
+  gap: var(--bespoke-spacer, var(--spacer));
 
   @include respond-to("medium") {
     flex-direction: row;
-  }
-
-  > * {
-    flex: 1;
   }
 }

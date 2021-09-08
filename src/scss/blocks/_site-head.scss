@@ -15,8 +15,8 @@
 
 .logo {
   max-inline-size: min-content;
-  padding-block-start: 0.5rem;
-  margin-inline-end: 2rem;
+  // padding-block-start: 0.5rem;
+  // margin-inline-end: 2rem;
 }
 
 .nav-list {
@@ -31,6 +31,7 @@
     display: block;
     text-align: center;
 
+    &:hover,
     &[data-state="active"],
     &[aria-current="page"] {
       color: var(--clr-primary-100);

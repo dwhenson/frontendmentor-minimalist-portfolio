@@ -39,10 +39,6 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
-
-  &:hover {
-    color: var(--clr-primary-100);
-  }
 }
 
 /* ==================================================
@@ -56,7 +52,6 @@ a {
   ================================================== */
 
 @import "utilities/container";
-@import "utilities/button";
 @import "utilities/flow-content";
 @import "utilities/flow-section";
 @import "utilities/outline";
@@ -69,4 +64,6 @@ a {
    ================================================== */
 
 @import "blocks/site-head";
+@import "blocks/button";
 @import "blocks/cta";
+@import "blocks/site-foot";

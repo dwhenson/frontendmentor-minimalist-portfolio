@@ -1,10 +1,10 @@
 <footer class="align-content site-foot">
   <div class="split container">
-    <nav class="navigation" aria-label="secondary navigation">
+    <nav class="split" aria-label="secondary navigation">
+      <a href="/" aria-label="{{ site.name }} - home" class="logo">
+        {% include "partials/brand.svg" %}
+      </a>
       <ul class="split" role="list">
-        <a href="/" aria-label="{{ site.name }} - home" class="logo">
-          {% include "partials/brand.svg" %}
-        </a>
         {% for item in navigation.items %}
         <li>
           <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>

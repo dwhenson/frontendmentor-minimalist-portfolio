@@ -4,13 +4,17 @@
   grid-column: 1 / -1;
   background-color: var(--clr-primary-300);
   color: var(--clr-secondary-100);
-  padding-block: calc(var(--spacer) * 1);
+  padding-block: calc(var(--spacer) * 4);
 
-  .split {
-    align-items: center;
+  @include respond-to("medium") {
+    padding-block: calc(var(--spacer) * 2);
   }
 
-  path {
+  nav {
+    --bespoke-spacer: calc(var(--spacer) * 2);
+  }
+
+  .logo path {
     fill: var(--clr-secondary-100);
   }
 

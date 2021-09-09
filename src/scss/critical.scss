@@ -22,11 +22,13 @@ h3 {
   font-family: "Ibarra Real Nova", serif;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: var(--step-3);
 }
 
-h2 {
+h2,
+.h2 {
   font-size: var(--step-2);
 }
 

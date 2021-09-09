@@ -1,4 +1,19 @@
 .cta {
+  --bespoke-spacer: calc(var(--spacer) * 3);
+
   padding-block: calc(var(--spacer) * 5);
   align-items: center;
+  text-align: center;
+
+  @include respond-to("medium") {
+    text-align: start;
+  }
+
+  h2 {
+    max-inline-size: 20ch;
+  }
+
+  a {
+    flex: 0 0 auto;
+  }
 }

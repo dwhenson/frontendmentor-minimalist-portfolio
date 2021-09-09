@@ -5,27 +5,18 @@
 }
 
 .site-head__inner {
-  display: flex;
+  --bespoke-spacer: calc(var(--spacer) * 2.5);
   flex-direction: row;
-  // flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--spacer);
 }
 
 .logo {
   max-inline-size: min-content;
-  // padding-block-start: 0.5rem;
-  // margin-inline-end: 2rem;
 }
 
 .nav-list {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: flex-end;
-  gap: calc(var(--spacer) * 2.5);
 
   a {
     display: block;

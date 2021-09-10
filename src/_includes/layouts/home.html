@@ -1,22 +1,51 @@
 {% extends "layouts/base.html" %}
+{% set pageCriticalStyles = ['css/home.css'] %}
 
 {% block content %}
-<section class="hero flow-content">
-  <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
-  <a class="button accent" href="/">About Me</a>
+<!-- FIXME I think only the desktop image is ever shown?-->
+<section class="hero">
+  <img
+    class="hero-image"
+    width="622"
+    height="542"
+    src="../../images/homepage/mobile/image-homepage-hero@2x.jpg"
+    srcset="./../images/homepage/mobile/image-homepage-hero@2x.jpg 622w,
+            ./../images/homepage/tablet/image-homepage-hero@2x.jpg 1376w,
+            ./../images/homepage/desktop/image-homepage-hero@2x.jpg 2220w"
+    sizes="100vw"
+    alt="A computer screen showing my work"
+  />
+  <div class="flow-content hero-text">
+    <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+    <a class="button accent" href="/">About Me</a>
+  </div>
 </section>
 
-<section class="flow-content about">
-  <h2 class="h1">About Me</h2>
+<!-- FIXME tablet image is never shown-->
+<section class="split flow-section about">
+  <div class="about-image">
+    <img
+      width="622"
+      height="692"
+      src="../../images/homepage/mobile/image-homepage-profile@2x.jpg"
+      srcset="./../images/homepage/mobile/image-homepage-profile@2x.jpg 622w,
+              ./../images/homepage/tablet/image-homepage-profile@2x.jpg 562w,
+              ./../images/homepage/desktop/image-homepage-profile@2x.jpg 1080w"
+      sizes="(min-width: 65em) 50vw, (min-width: 40em) 30vw, 100vw"
+      alt="A profile photo of Alex Spencer looking serious"
+    />
+  </div>
 
-  <p>I’m a junior front-end developer looking for a new role in an exciting company.
-  I focus on writing accessible HTML, using modern CSS practices and writing clean
-  JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to
-  whatever tools are required. I’m based in London, UK, but I’m happy working remotely
-  and have experience in remote teams. When I’m not coding, you’ll find me outdoors.
-  I love being out in nature whether that’s going for a walk, run or cycling. I’d love
-  you to check out my work.</p>
-
-  <a href="/" class="button" >Go to Portfolio</a>
+  <div class="flow-content about-text">
+    <h2 class="h1">About Me</h2>
+    <p>I’m a junior front-end developer looking for a new role in an exciting company.
+    I focus on writing accessible HTML, using modern CSS practices and writing clean
+    JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to
+    whatever tools are required. I’m based in London, UK, but I’m happy working remotely
+    and have experience in remote teams. When I’m not coding, you’ll find me outdoors.
+    I love being out in nature whether that’s going for a walk, run or cycling. I’d love
+    you to check out my work.</p>
+    <a href="/" class="button" >Go to Portfolio</a>
+  </div>
 </section>
 {% endblock %}

@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: var(--bespoke-spacer, var(--spacer));
+  gap: var(--bespoke-gap, var(--spacer));
 
   @include respond-to("medium") {
     flex-direction: row;

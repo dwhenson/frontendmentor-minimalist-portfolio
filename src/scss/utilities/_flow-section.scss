@@ -1,5 +1,5 @@
 /* Add vertical rhythm between sections */
 
 .flow-section > * + * {
-  padding-block-start: max(6vh, 2rem);
+  margin-block-start: max(6vh, 3rem);
 }

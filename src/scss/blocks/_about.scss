@@ -1,0 +1,18 @@
+.about {
+  @include respond-to("medium") {
+    --bespoke-gap: clamp(3rem, 20%, 8rem);
+  }
+}
+
+.about-text {
+  --bespoke-flow-spacer: 2em;
+
+  @include respond-to("medium") {
+    flex: 1 1 60%;
+  }
+}
+
+.about-text,
+.about-image {
+  flex: 1 1 0;
+}

@@ -1,4 +1,6 @@
 .hero {
+  --bespoke-flow-spacer: 2em;
+
   display: grid;
   gap: var(--spacer);
 
@@ -9,8 +11,6 @@
     }
 
     .hero-text {
-      --bespoke-space: clamp(2rem, 10%, 4rem);
-
       align-self: end;
       inline-size: 50ch;
       padding-block-start: clamp(1rem, 5%, 2rem);

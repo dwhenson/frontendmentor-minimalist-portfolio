@@ -1,0 +1,38 @@
+// TODO add grey lines everywhere
+
+.portfolio {
+  @include respond-to("medium") {
+    margin-block-start: calc(var(--spacer) * 3);
+
+    li:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  @include respond-to("large") {
+    li:nth-of-type(odd) {
+      margin-inline-end: clamp(2.5rem, 15%, 5rem);
+    }
+
+    li:nth-of-type(even) {
+      margin-inline-start: clamp(2.5rem, 15%, 5rem);
+    }
+  }
+}
+
+.portfolio-item {
+  --bespoke-gap: clamp(2.5rem, 15%, 5rem);
+}
+
+@include respond-to("medium") {
+  .portfolio-image,
+  .portfolio-text {
+    flex: 1 1 100%;
+  }
+}
+
+@include respond-to("large") {
+  .portfolio-text {
+    max-inline-size: 45ch;
+  }
+}

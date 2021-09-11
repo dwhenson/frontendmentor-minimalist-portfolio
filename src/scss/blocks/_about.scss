@@ -5,8 +5,6 @@
 }
 
 .about-text {
-  --bespoke-flow-spacer: 2em;
-
   @include respond-to("medium") {
     flex: 1 1 60%;
   }

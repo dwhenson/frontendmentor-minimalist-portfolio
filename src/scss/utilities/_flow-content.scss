@@ -1,7 +1,5 @@
 /* Add vertical rhythm inside elements */
 
 .flow-content > * + * {
-  --bespoke-flow-spacer: 2em;
-
-  margin-block-start: var(--bespoke-flow-spacer, var(--spacer));
+  margin-block-start: var(--bespoke-flow-spacer, calc(var(--spacer) * 2));
 }

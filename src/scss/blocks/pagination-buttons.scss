@@ -1,0 +1,46 @@
+.pagination-buttons {
+  --bespoke-flow-spacer: 0.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: normal;
+  padding-block: clamp(1rem, 5%, 2rem);
+}
+
+.h2 {
+  font-family: "Ibarra Real Nova", serif;
+  text-transform: none;
+}
+
+.text.previous,
+.text.next {
+  text-transform: none;
+  color: var(--clr-secondary-200);
+}
+
+.paginate:last-of-type {
+  text-align: end;
+}
+
+.paginate {
+  position: relative;
+
+  @include respond-to("medium") {
+    padding-inline: clamp(1rem, 5%, 2rem);
+
+    .arrow {
+      position: absolute;
+      inset-block-start: 50%;
+      transform: translateY(-50%);
+
+      &.previous {
+        inset-inline-start: 0;
+      }
+
+      &.next {
+        inset-inline-end: 0;
+      }
+    }
+  }
+}

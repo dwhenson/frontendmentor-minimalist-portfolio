@@ -2,6 +2,7 @@
 {% set pageCriticalStyles = ['css/project.css'] %}
 
 {% block content %}
+<!-- FIXME image are not changing -->
 <article class="project">
   <img
   class="project-hero"
@@ -23,7 +24,7 @@
   <section class="flow-content">
     <h3 class="h2">Project Background</h3>
     <p>{{ background }}</p>
-    <h3>Static Previews</h3>
+    <h3 class="h3">Static Previews</h3>
     <img
       width="622"
       height="392"
@@ -45,10 +46,8 @@
       alt="{{ item.data.title }} landing page"
     />
   </section>
-  <section>
-    <button>past</button>
-    <button>future</button>
-  </section>
 </article>
+
+{% include "partials/pagination-buttons.html" %}
 
 {% endblock %}

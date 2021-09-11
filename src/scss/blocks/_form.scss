@@ -1,0 +1,25 @@
+.contact {
+  --bespoke-flow-spacer: 1em;
+
+  label,
+  input {
+    display: block;
+    inline-size: 100%;
+  }
+
+  input {
+    padding-inline: clamp(1rem, 5%, 2rem);
+    padding-block: clamp(0.5rem, 2.5%, 1rem);
+    border: 0;
+    margin-block-start: 0.5em;
+    background-color: var(--clr-secondary-200);
+  }
+
+  input[type="textarea"] {
+    min-block-size: 6em;
+  }
+}
+
+.error {
+  min-block-size: 1em;
+}

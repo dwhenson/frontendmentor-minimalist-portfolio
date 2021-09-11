@@ -1,15 +1,16 @@
 {% extends "layouts/base.html" %}
+{% set pageCriticalStyles = ['css/contact.css'] %}
 
 {% block content %}
-<section>
-  <h2>Get in touch</h2>
+<section class="flow-content">
+  <h2 class="h1">Get in touch</h2>
   <p> I’d love to hear about what you’re working on and how I could help. I’m currently
     looking for a new role and am open to a wide range of opportunities. My preference
     would be to find a position in a company in London. But I’m also happy to hear about
     opportunities that don’t fit that description. I’m a hard-working and positive person
     who will always approach each task with a sense of purpose and attention to detail.
     Please do feel free to check out my online profiles below and get in touch using the form.</p>
-  <ul role='list'>
+  <ul class="split socials" role='list'>
     <li><a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
           <path fill="#33323D"
@@ -31,17 +32,22 @@
   </ul>
 </section>
 
-<section>
+<section class="flow-content">
   <h2>Contact me</h2>
-  <form action="post">
-    <label for="name">Name</label>
+  <form action="post" class="contact flow-content">
+    <label for="name">Name
     <input type="text" name="name" id="name" placeholder="Jane Appleseed">
-    <label for="email">Email address</label>
+    <p class="error name"></p>
+    </label>
+    <label for="email">Email address
     <input type="text" name="email " id="email" placeholder="email@example.com">
-    <label for="message">Message</label>
-    <input type="textarea" name="message " id="message" placeholder="How can I help?
-">
-    <button>How can I help?</button>
+    <p class="error email"></p>
+    </label>
+    <label for="message">Message
+    <input type="textarea" name="message " id="message" placeholder="How can I help?">
+    <p class="error message"></p>
+    </label>
+    <button class="button accent">Send Message</button>
   </form>
 </section>
 

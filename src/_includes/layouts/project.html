@@ -1,23 +1,26 @@
-{% extends "layouts/base.html" %} {% block content %}
+{% extends "layouts/base.html" %}
+{% set pageCriticalStyles = ['css/project.css'] %}
 
-<article>
-  <header>
-    <h2 class="h1">{{ title }}</h2>
-    <p class="roles">{{ roles }}</p>
-    <p>{{ summary }}</p>
-    <a href="{{ external-link }}" class="button">Visit Website</a>
-    <img
-      width="622"
-      height="280"
-      src="{{ project.hero.mobile }}"
-      srcset="{{ project.hero.mobile }} 622w,
-                 {{ project.hero.tablet }} 1378w,
-                 {{ project.hero.desktop }} 2200w"
-      sizes="(min-width: 40em) 50vw, 100vw"
-      alt="{{ item.data.title }} screenshots"
-    />
+{% block content %}
+<article class="project">
+  <img
+  class="project-hero"
+    width="622"
+    height="280"
+    src="{{ project.hero.mobile }}"
+    srcset="{{ project.hero.mobile }} 622w,
+               {{ project.hero.tablet }} 1378w,
+               {{ project.hero.desktop }} 2200w"
+    sizes="(min-width: 40em) 50vw, 100vw"
+    alt="{{ item.data.title }} screenshots"
+  />
+  <header class="project-intro">
+      <h2 class="h1">{{ title }}</h2>
+      <p class="roles">{{ roles }}</p>
+      <p class="summary">{{ summary }}</p>
+      <a href="{{ external-link }}" class="button">Visit Website</a>
   </header>
-  <section>
+  <section class="flow-content">
     <h3 class="h2">Project Background</h3>
     <p>{{ background }}</p>
     <h3>Static Previews</h3>
@@ -48,4 +51,4 @@
   </section>
 </article>
 
-{% include "partials/cta.html" %} {% endblock %}
+{% endblock %}

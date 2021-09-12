@@ -1,4 +1,16 @@
-.contact {
+.contact-into {
+  margin-block-start: clamp(2.5rem, 15%, 5rem);
+}
+
+@include respond-to("large") {
+  .contact-intro,
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+.form {
   --bespoke-flow-spacer: 1em;
 
   label,
@@ -15,8 +27,14 @@
     background-color: var(--clr-secondary-200);
   }
 
+  // FIXME location of text at top of text input
   input[type="textarea"] {
     min-block-size: 6em;
+
+    &::placeholder {
+      position: absolute;
+      inset-block-start: 1em;
+    }
   }
 }
 

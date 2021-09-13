@@ -25,12 +25,13 @@
       <link rel="stylesheet" media="print" href="{{ item }}?{{ assetHash }}" onload="this.media='all'" />
     {% endfor %}
   {% endif %}
+<script src="../../js/main.js" defer></script>
 </head>
 
 <body class="align-content">
   {% include "partials/site-head.html" %}
 
-  <main tabindex="-1" id="main-content" class="container flow-section">
+  <main tabindex="-1" id="main-content" class="flow-section">
     {% block content %}{% endblock %}
     {% include "partials/cta.html" %}
   </main>

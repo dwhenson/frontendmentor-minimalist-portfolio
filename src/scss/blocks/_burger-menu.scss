@@ -14,10 +14,10 @@
   inset-inline-start: 50%;
   inline-size: 24px;
   block-size: 3px;
-  border: 1px solid var(--clr-neutral-300);
+  border: 1px solid var(--clr-primary-300);
   border-radius: 3px;
   margin-inline-start: -12px;
-  background: var(--clr-neutral-300);
+  background: var(--clr-primary-300);
   transition: transform 100ms ease-in-out;
 }
 
@@ -43,7 +43,7 @@
 .burger-menu[enabled="true"] .burger-menu__trigger {
   position: relative;
   display: block;
-  inset-inline-start: calc(100% - 2rem);
+  inset-block-start: -8px;
   inline-size: 2rem;
   block-size: 2rem;
   border: 0;
@@ -58,13 +58,13 @@
   z-index: 1;
   visibility: hidden;
   opacity: 0;
-  inset-block-start: 3rem;
+  inset-block-start: 6.5rem;
   inset-inline-start: 0;
   inline-size: 100%;
   block-size: 100%;
   padding-block-start: 2rem;
   overflow-y: auto;
-  padding-inline: clamp(1rem, 5%, 4rem);
+  padding-inline: clamp(1rem, 2.5%, 2rem);
   -webkit-overflow-scrolling: touch;
 }
 
@@ -72,25 +72,18 @@
 // FIXME: cta width in open panel
 .burger-menu[enabled="true"] .navigation {
   padding: 2rem;
-  border-radius: 0.25em;
-  box-shadow: 0 10px 40px var(--clr-neutral-400);
-  background-color: var(--clr-primary-200);
+  background-color: var(--clr-primary-300);
 
   ul {
     flex-direction: column;
-    font-weight: 700;
   }
 
   li:not(:first-of-type) {
-    margin-block-start: 2rem;
+    margin-block-start: 1rem;
   }
 
   a {
-    color: var(--clr-neutral-100);
-  }
-
-  .login {
-    margin-inline-start: unset;
+    color: var(--clr-secondary-100);
   }
 }
 

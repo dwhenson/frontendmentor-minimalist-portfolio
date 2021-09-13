@@ -2,10 +2,11 @@
   margin-block-start: clamp(2.5rem, 15%, 5rem);
 }
 
-@include respond-to("large") {
-  .contact-intro,
-  .contact-form {
-    display: grid;
+.contact-intro,
+.contact-form {
+  display: grid;
+
+  @include respond-to("large") {
     grid-template-columns: 1fr 1.5fr;
   }
 }
@@ -27,7 +28,7 @@
     background-color: var(--clr-secondary-200);
   }
 
-  // FIXME location of text at top of text input
+  // FIXME: location of text at top of text input
   input[type="textarea"] {
     min-block-size: 6em;
 

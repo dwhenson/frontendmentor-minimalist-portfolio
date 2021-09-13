@@ -5,14 +5,9 @@ $max: 1440px;
 .align-content {
   display: grid;
   grid-template-columns: minmax($min, 1fr) minmax($min, $max) minmax($min, 1fr);
-  grid-auto-rows: min-content;
+  // grid-auto-rows: min-content;
 
   > * {
     grid-column: 2;
-  }
-
-  // FIXME fix footer to bottom - issue with min-content?
-  footer {
-    // margin-block-start: auto;
   }
 }

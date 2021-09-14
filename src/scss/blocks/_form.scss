@@ -37,8 +37,20 @@
       inset-block-start: 1em;
     }
   }
-}
 
-.error {
-  min-block-size: 1em;
+  .error-container {
+    min-block-size: 1.25em;
+    margin-block-start: 0.25em;
+  }
+
+  .error {
+    border: 1px solid var(--clr-error-100);
+  }
+
+  .error-message {
+    font-size: 1em;
+    font-style: italic;
+    line-height: 1;
+    color: var(--clr-error-100);
+  }
 }

@@ -1,5 +1,6 @@
 {% extends "layouts/base.html" %}
 {% set pageCriticalStyles = ['css/contact.css'] %}
+{% set formValidation = true %}
 {% block content %}
 
 <section class="contact-intro ">
@@ -57,18 +58,20 @@
         name="name"
         id="name"
         placeholder="Jane Appleseed"
+        data-bouncer-target="#name-error"
         required />
-      <p class="error name"></p>
+      <p id="name-error" class="error-container"></p>
     </label>
     <label for="email"
       >Email address
       <input
-        type="text"
+        type="email"
         name="email"
         id="email"
         placeholder="email@example.com"
+        data-bouncer-target="#email-error"
         required />
-      <p class="error email"></p>
+      <p id="email-error" class="error-container"></p>
     </label>
     <label for="message"
       >Message
@@ -78,8 +81,9 @@
         id="message"
         rows="10"
         placeholder="How can I help?"
+        data-bouncer-target="#message-error"
         required />
-      <p class="error message"></p>
+      <p id="message-error" class="error-container"></p>
     </label>
     <button class="button accent">Send Message</button>
   </form>

@@ -25,7 +25,14 @@
       <link rel="stylesheet" media="print" href="{{ item }}?{{ assetHash }}" onload="this.media='all'" />
     {% endfor %}
   {% endif %}
+
 <script src="../../js/main.js" defer></script>
+{% if formValidation %}
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer/dist/bouncer.polyfills.min.js"></script>
+{% endif %}
+
+
+
 </head>
 
 <body class="align-content">
@@ -38,4 +45,9 @@
 
   {% include "partials/site-foot.html" %}
 </body>
+{% if formValidation %}
+<script>
+  var validate = new Bouncer('form');
+</script>
+{% endif %}
 </html>

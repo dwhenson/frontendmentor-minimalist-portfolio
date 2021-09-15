@@ -1,0 +1,47 @@
+
+<!-- FIXME: image are not changing -->
+<article class="project">
+  <img
+  class="project-hero"
+    width="622"
+    height="280"
+    src="{{ project.hero.mobile }}"
+    srcset="{{ project.hero.mobile }} 622w,
+               {{ project.hero.tablet }} 1378w,
+               {{ project.hero.desktop }} 2200w"
+    sizes="(min-width: 40em) 50vw, 100vw"
+    alt="{{ item.data.title }} screenshots"
+  />
+  <header class="project-intro">
+      <h2 class="h1">{{ title }}</h2>
+      <p class="roles">{{ roles }}</p>
+      <p class="summary">{{ summary }}</p>
+      <a href="{{ external-link }}" class="button">Visit Website</a>
+  </header>
+  <section class="flow-content">
+    <h3 class="h2">Project Background</h3>
+    <p>{{ background }}</p>
+    <h3 class="h3">Static Previews</h3>
+    <img
+      width="622"
+      height="392"
+      src="{{ project.previews.mobile }}"
+      srcset="{{ project.previews.mobile.one }} 622w,
+                 {{ project.previews.tablet.one }} 1378w,
+                 {{ project.previews.desktop.one }} 1270w"
+      sizes="(min-width: 40em) 50vw, 100vw"
+      alt="{{ item.data.title }} landing page"
+    />
+    <img
+      width="622"
+      height="392"
+      src="{{ project.previews.mobile }}"
+      srcset="{{ project.previews.mobile.two }} 622w,
+                 {{ project.previews.tablet.two }} 1378w,
+                 {{ project.previews.desktop.two }} 1270w"
+      sizes="(min-width: 40em) 50vw, 100vw"
+      alt="{{ item.data.title }} landing page"
+    />
+  </section>
+</article>
+

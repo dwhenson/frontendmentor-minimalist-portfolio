@@ -1,18 +1,25 @@
 <!-- TODO: replace placeholder text with auto generated value -->
 
 <section class="pagination-buttons">
-  <a href="/" class="paginate">
+  {% if pagination.previous %}
+  <a href="{{ pagination.href.previous }}" class="paginate">
     <svg class="arrow previous" xmlns="http://www.w3.org/2000/svg" width="10" height="16">
       <path fill="none" stroke="#33323D" d="M9 0L1 8l8 8" />
     </svg>
     <p class="h2">Test</p>
-    <p class="text previous">Previous Project</p>
+    <p class="text previous">{{ paginationPrevText }}</p>
   </a>
-  <a href="/" class="paginate">
+  {% endif %}
+  {% if pagination.href.next %}
+  <a href="{{ pagination.href.next }}" class="paginate">
     <svg class="arrow next" xmlns="http://www.w3.org/2000/svg" width="10" height="16">
       <path fill="none" stroke="#33323D" d="M1 0l8 8-8 8" />
     </svg>
     <p class="h2">Test</p>
-    <p class="text next">Next Project</p>
+    <p class="text next">{{ paginationNextText }}<</p>
   </a>
+  {% endif %}
 </section>
+
+
+

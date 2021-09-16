@@ -51,7 +51,6 @@
   cursor: pointer;
 }
 
-// CHECK: Check if need to disable scroll or not?
 // Hamburger menu panel size and positioning
 .burger-menu[enabled="true"] .burger-menu__panel {
   position: absolute;
@@ -69,7 +68,6 @@
 }
 
 // Hamburger menu panel contents size and positioning
-// FIXME: cta width in open panel
 .burger-menu[enabled="true"] .navigation {
   padding: 2rem;
   background-color: var(--clr-primary-300);

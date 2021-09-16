@@ -3,6 +3,8 @@
 
   @include respond-to("medium") {
     --bespoke-gap: clamp(3rem, 20%, 8rem);
+
+    align-items: unset;
   }
 }
 
@@ -15,4 +17,16 @@
 .about-text,
 .about-image {
   flex: 1 1 0;
+}
+
+@include respond-to("medium") {
+  .about-image {
+    align-self: center;
+  }
+
+  .about-text {
+    display: grid;
+    align-content: center;
+    max-inline-size: 45ch;
+  }
 }

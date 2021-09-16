@@ -20,6 +20,8 @@
 
 .portfolio-item {
   --bespoke-gap: clamp(2.5rem, 15%, 5rem);
+
+  align-items: unset;
 }
 
 @include respond-to("medium") {
@@ -27,13 +29,14 @@
   .portfolio-text {
     flex: 1 1 100%;
   }
-}
 
-@include respond-to("large") {
+  .portfolio-image {
+    align-self: center;
+  }
+
   .portfolio-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    align-content: center;
     max-inline-size: 45ch;
   }
 }

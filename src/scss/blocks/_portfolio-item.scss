@@ -1,5 +1,3 @@
-// TODO: add grey lines everywhere
-
 .portfolio {
   @include respond-to("medium") {
     margin-block-start: clamp(2.5rem, 15%, 5rem);
@@ -33,6 +31,9 @@
 
 @include respond-to("large") {
   .portfolio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-inline-size: 45ch;
   }
 }

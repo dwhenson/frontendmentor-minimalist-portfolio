@@ -2,9 +2,9 @@
 {% set pageCriticalStyles = ['css/portfolio.css'] %}
 
 {% block content %}
-<ul class="portfolio flow-section" role='list'>
+<ul class="[ portfolio ] [ flow-section ]" role='list'>
   {% for item in collections.projects %}
-  <li class="portfolio-item split">
+  <li class=" [ portfolio-item ] [ split ]">
       <div class="portfolio-image">
         <img
           width="622"
@@ -17,7 +17,7 @@
           alt="{{ item.data.title }} landing page"
         />
       </div>
-      <div class="portfolio-text flow-content">
+      <div class="[ portfolio-text ] [ flow-content borders ]">
         <h2 class="h1">{{ item.data.title }}</h2>
         <p>{{ item.data.summary }}</p>
         <a href="/project/{{ item.data.title | slug }}/index.html" class="button">View Project</a>

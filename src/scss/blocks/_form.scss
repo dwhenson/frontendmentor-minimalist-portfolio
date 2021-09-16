@@ -4,9 +4,10 @@
 
 .contact-intro,
 .contact-form {
-  display: grid;
-
   @include respond-to("large") {
+    --bespoke-flow-spacer: 0;
+
+    display: grid;
     grid-template-columns: 1fr 1.5fr;
   }
 }
@@ -28,7 +29,7 @@
     background-color: var(--clr-secondary-200);
   }
 
-  // FIXME: location of text at top of text input
+  // FIXME: location of text at top of text input and wrapping
   input[type="textarea"] {
     min-block-size: 6em;
 

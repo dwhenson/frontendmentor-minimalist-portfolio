@@ -1,4 +1,6 @@
 .about {
+  --bespoke-gap: 2em;
+
   @include respond-to("medium") {
     --bespoke-gap: clamp(3rem, 20%, 8rem);
   }

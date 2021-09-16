@@ -43,4 +43,8 @@
       }
     }
   }
+
+  &:hover * {
+    color: var(--clr-primary-100);
+  }
 }

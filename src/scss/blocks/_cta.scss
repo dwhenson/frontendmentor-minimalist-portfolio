@@ -15,7 +15,9 @@
     hr {
       inline-size: 100%;
       block-size: 1px;
-      color: var(--clr-secondary-200);
+      border: 0;
+      // block-size: 1px;
+      background-color: var(--clr-secondary-200);
     }
 
     a {

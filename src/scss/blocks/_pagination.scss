@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   letter-spacing: normal;
-  padding-block: clamp(1rem, 5%, 2rem);
+  padding-block: 0;
 }
 
 .h2 {
@@ -18,12 +18,10 @@
   text-transform: none;
 }
 
-.paginate:last-of-type {
-  text-align: end;
-}
-
 .paginate {
   position: relative;
+  flex: 1 1 0;
+  padding-block: clamp(1rem, 5%, 2rem);
 
   @include respond-to("medium") {
     padding-inline: clamp(1rem, 5%, 2rem);
@@ -46,4 +44,9 @@
   &:hover * {
     color: var(--clr-primary-100);
   }
+}
+
+.paginate:last-of-type {
+  border-inline-start: 1px solid var(--clr-secondary-200);
+  text-align: end;
 }

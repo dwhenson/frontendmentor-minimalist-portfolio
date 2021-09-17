@@ -4,7 +4,6 @@
   inline-size: fit-content;
   border: 1px solid var(--bd, var(--clr-primary-300));
   background-color: var(--bg, var(--clr-secondary-100));
-  // transition: background-color 250ms linear, color 200ms 200ms linear;
   transition: transform 350ms cubic-bezier(0, 0.26, 0.13, 1.55),
     background-color 150ms, color 150ms;
   letter-spacing: 1px;

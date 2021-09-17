@@ -5,10 +5,13 @@
 .contact-intro,
 .contact-form {
   @include respond-to("large") {
-    --bespoke-flow-spacer: 0;
-
     display: grid;
     grid-template-columns: 1fr 1.5fr;
+    // HACK to fix alignment on each section
+    h2 + .contact-text,
+    h2 + .form {
+      margin-block-start: 0;
+    }
   }
 }
 

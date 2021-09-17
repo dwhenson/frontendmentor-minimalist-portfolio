@@ -1,4 +1,6 @@
 .socials {
+  --bespoke-gap: calc(var(--spacer) * 1);
+
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;

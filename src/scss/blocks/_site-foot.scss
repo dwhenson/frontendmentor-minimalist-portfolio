@@ -8,6 +8,10 @@
     padding-block: calc(var(--spacer) * 2);
   }
 
+  .site-foot__inner {
+    --bespoke-gap: calc(var(--spacer) * 2);
+  }
+
   nav {
     --bespoke-gap: calc(var(--spacer) * 2);
 

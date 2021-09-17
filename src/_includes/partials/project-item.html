@@ -1,18 +1,11 @@
 <!-- FIXME: images are not changing -->
 
 <article class="project">
-  <img
-  class="project-hero"
-    width="622"
-    height="280"
-    src="{{ item.data.project.hero.mobile }}"
-    srcset="{{ item.data.project.hero.mobile }} 622w,
-               {{ item.data.project.hero.tablet }} 1378w,
-               {{ item.data.project.hero.desktop }} 2200w"
-    sizes="(min-width: 40em) 50vw, 100vw"
-    alt="{{ item.data.title }} screenshots"
-  />
-  <header class=" [ project-intro ] [ borders ]">
+   <picture  class="project-hero">
+      <source srcset="{{ item.data.project.hero.desktop }}" media="(min-width: 1040px)">
+      <source srcset="{{ item.data.project.hero.tablet }} " media="(min-width: 640px)">
+      <img src="{{ item.data.project.hero.mobile }} " alt="{{ item.data.title }} landing page">
+  </picture>  <header class=" [ project-intro ] [ borders ]">
       <h2 class="h1">{{ item.data.title }}</h2>
       <p class="roles">{{ item.data.roles }}</p>
       <p class="summary">{{ item.data.summary }}</p>
@@ -22,27 +15,15 @@
     <h3 class="h2">Project Background</h3>
     <p>{{ item.data.background }}</p>
     <h3 class="h2">Static Previews</h3>
-    <img
-      width="622"
-      height="392"
-      src="{{ item.data.project.previews.mobile }}"
-      srcset="{{ item.data.project.previews.mobile.one }} 622w,
-                 {{ item.data.project.previews.tablet.one }} 1378w,
-                 {{ item.data.project.previews.desktop.one }} 1270w"
-      sizes="(min-width: 40em) 50vw, 100vw"
-      alt="{{ item.data.title }} landing page"
-    />
-    <img
-      width="622"
-      height="392"
-      src="{{ item.data.project.previews.mobile }}"
-      srcset="{{ item.data.project.previews.mobile.two }} 622w,
-                 {{ item.data.project.previews.tablet.two }} 1378w,
-                 {{ item.data.project.previews.desktop.two }} 1270w"
-      sizes="(min-width: 40em) 50vw, 100vw"
-      alt="{{ item.data.title }} landing page"
-    />
+    <picture>
+        <source srcset="{{ item.data.project.previews.desktop.one }}" media="(min-width: 1040px)">
+        <source srcset="{{ item.data.project.previews.tablet.one }} " media="(min-width: 640px)">
+        <img src="{{ item.data.project.previews.mobile.one }} " alt="{{ item.data.title }} landing page">
+    </picture>
+     <picture>
+        <source srcset="{{ item.data.project.previews.desktop.two }}" media="(min-width: 1040px)">
+        <source srcset="{{ item.data.project.previews.tablet.two }} " media="(min-width: 640px)">
+        <img src="{{ item.data.project.previews.mobile.two }} " alt="{{ item.data.title }} landing page">
+    </picture>
   </section>
 </article>
-
-

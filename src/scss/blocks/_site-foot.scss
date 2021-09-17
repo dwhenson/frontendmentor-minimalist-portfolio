@@ -12,9 +12,24 @@
 
   nav {
     --bespoke-gap: calc(var(--spacer) * 2);
+
+    a {
+      display: block;
+      transition: color 150ms;
+      text-align: center;
+
+      &:hover {
+        color: var(--clr-primary-100);
+      }
+    }
   }
 
   .logo path {
     fill: var(--clr-secondary-100);
+    transition: fill 150ms;
+
+    &:hover {
+      fill: var(--clr-primary-100);
+    }
   }
 }

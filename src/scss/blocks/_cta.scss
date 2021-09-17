@@ -1,19 +1,25 @@
 .cta {
-  --bespoke-gap: calc(var(--spacer) * 3);
-
   padding-block: calc(var(--spacer) * 5);
   align-items: center;
   text-align: center;
 
   @include respond-to("medium") {
+    --bespoke-gap: calc(var(--spacer) * 3);
+
     text-align: start;
-  }
 
-  h2 {
-    max-inline-size: 20ch;
-  }
+    h2 {
+      flex: 1 0 14ch;
+    }
 
-  a {
-    flex: 0 0 auto;
+    hr {
+      inline-size: 100%;
+      block-size: 1px;
+      color: var(--clr-secondary-200);
+    }
+
+    a {
+      flex: 0 0 auto;
+    }
   }
 }

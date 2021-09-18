@@ -9,12 +9,14 @@
       <picture>
         <source
           srcset="{{ item.data.portfolio.desktop }}"
-          media="(min-width: 1040px)" />
+          media="(min-width: 65em)" />
         <source
           srcset="{{ item.data.portfolio.tablet }}"
-          media="(min-width: 640px)" />
+          media="(min-width: 40em)" />
         <img
           src="{{ item.data.portfolio.mobile }} "
+          width="622"
+          height="576"
           alt="{{ item.data.title }} landing page" />
       </picture>
     </div>

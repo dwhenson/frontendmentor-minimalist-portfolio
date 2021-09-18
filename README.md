@@ -17,9 +17,9 @@ Your users should be able to:
 
 - 💡 I learnt a lot about 11ty on this project. I used collections and pagination for the first time. It was difficult but I can see this being very useful
 - 💡 I think I could have hard coded this in about half the time, but making edits to this site is now a real breeze thanks to 11ty and nunjunks templating.
-- 💡 Using 11ty's pagination feature (and collections), adding projects from a markdown file also updates the porfolio page and the pagination links and text automatically
+- 💡 Using 11ty's pagination feature (and collections), adding projects from a markdown file also updates the portfolio page and the pagination links and text automatically
 - 💡 I also inlined my CSS to improve performance. I split my CSS into 'critical', which appears on every page, and other page specific CSS is inlined on each page
-- 💡 I need to get in the habit of checking browser support as I had issues with Safari not accepting some CSS rules late on; it took me a while to work out what was happending
+- 💡 I need to get in the habit of checking browser support as I had issues with Safari not accepting some CSS rules late on; it took me a while to work out what was happening
 
 ## Problems
 
@@ -32,9 +32,9 @@ I would very much welcome advice on the following issues:
 
 - 🙇‍♂️ Get comfortable with responsive images (srcset, sizes etc).
 - 🙇‍♂️ Continue to improve knowledge of Gulp and build steps.
-- 🙇‍♂️ Keep going wtih 11ty!!
+- 🙇‍♂️ Keep going with 11ty!!
 
 ## Resources
 
-- 🔗 I used Andy Bell's totally full on [fully respnsive progressively enhacned burget menu ](https://piccalil.li/tutorial/build-a-fully-responsive-progressively-enhanced-burger-menu/) which is excellent.
+- 🔗 I used Andy Bell's totally full on [fully responsive progressively enhanced burger menu ](https://piccalil.li/tutorial/build-a-fully-responsive-progressively-enhanced-burger-menu/) which is excellent and very robust.
 - 🔗 I used Andy Bell's totally full on [Learn Eleventy from Scratch Course ](https://piccalil.li/course/learn-eleventy-from-scratch/) which is excellent, really in-depth and free!. It should probably be called learn 11ty, SASS, gulp, some accessibility stuff and how to structure CSS...

@@ -54,17 +54,17 @@
   z-index: 1;
   visibility: hidden;
   opacity: 0;
-  inset-block-start: 6.5rem;
-  inset-inline-start: 0;
-  inline-size: 100%;
+  // inset-block-start: max(8vh, 2rem);
+  inset-inline-start: 1em;
+  inline-size: calc(100% - 2em);
   block-size: 100%;
-  padding-block-start: 2rem;
+  padding-block-start: max(8vh, 2rem);
   overflow-y: auto;
   padding-inline: clamp(1rem, 2.5%, 2rem);
   -webkit-overflow-scrolling: touch;
 }
 
-// Hamburger menu panel contents size and positioning
+// Hamburger menu panel content size and positioning
 .burger-menu[enabled="true"] .navigation {
   padding: 2rem;
   background-color: var(--clr-primary-300);

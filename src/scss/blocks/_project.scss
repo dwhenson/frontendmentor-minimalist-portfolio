@@ -1,6 +1,6 @@
 .project {
   display: grid;
-  gap: max(9vh, 3rem);
+  gap: max(8vh, 2rem);
   // margin-block-start: clamp(2.5rem, 15%, 5rem);
 
   @include respond-to("large") {
@@ -18,8 +18,8 @@
   gap: var(--spacer) clamp(2.5rem, 15%, 5rem);
 
   @include respond-to("medium") {
-    align-self: start;
     grid-template-columns: 1fr 1fr;
+    align-self: start;
 
     .button,
     .roles {

@@ -1,7 +1,6 @@
 .button {
   position: relative;
   display: inline-block;
-  -moz-inline-size: fit-content;
   inline-size: fit-content;
   padding-block-start: 0.5em;
   padding-block-end: 0.5em;
@@ -21,10 +20,14 @@
 
     transform: scale(1.05);
   }
+
+  &:active {
+    --bg: var(--clr-primary-200);
+    --fg: var(--clr-secondary-100);
+  }
 }
 
-.accent,
-.button:active {
+.accent {
   --bg: var(--clr-primary-200);
   --fg: var(--clr-secondary-100);
 
@@ -33,6 +36,12 @@
     --bg: var(--clr-primary-100);
 
     transform: scale(1.05);
+  }
+
+  &:active {
+    --bg: var(--clr-secondary-100);
+    --fg: var(--clr-primary-200);
+    --bd: var(--clr-primary-200);
   }
 
   &.home {
@@ -55,8 +64,15 @@
 
     &:hover {
       &::before {
-        content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='14'><g fill='none' fill-rule='evenodd' stroke='white'><path d='M0 9l8 4 8-4'/><path opacity='.5' d='M0 5l8 4 8-4'/><path opacity='.25' d='M0 1l8 4 8-4'/></g></svg>");
-        background-color: hsla(167, 31%, 48%, 1);
+        content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='14'><g fill='none' fill-rule='evenodd' stroke='hsla(0, 0%, 98%, 1)'><path d='M0 9l8 4 8-4'/><path opacity='.5' d='M0 5l8 4 8-4'/><path opacity='.25' d='M0 1l8 4 8-4'/></g></svg>");
+        background-color: var(--clr-primary-100);
+      }
+    }
+
+    &:active {
+      &::before {
+        content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='14'><g fill='none' fill-rule='evenodd' stroke='hsla(245, 10%, 22%, 1)'><path d='M0 9l8 4 8-4'/><path opacity='.5' d='M0 5l8 4 8-4'/><path opacity='.25' d='M0 1l8 4 8-4'/></g></svg>");
+        background-color: var(--clr-secondary-100);
       }
     }
   }

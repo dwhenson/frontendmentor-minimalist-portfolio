@@ -9,7 +9,7 @@ displayOrder: 4
 # Content
 roles: "Interaction Design / Front End Development"
 stack: "HTML / CSS"
-external-link: "/"
+external: "https://frontend-mentor-fylo-dark-six.vercel.app/"
 background:
   "This project was a front-end  challenge from Frontend Mentor. It’s a platform that
   enables you to practice building websites to a design and project brief. Each challenge

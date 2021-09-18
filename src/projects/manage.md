@@ -1,6 +1,7 @@
 ---
 title: "Manage"
-summary: "This project required me to build a fully responsive landing page to the designs
+summary:
+  "This project required me to build a fully responsive landing page to the designs
   provided. I used HTML5, along with CSS Grid and JavaScript for the areas that
   required interactivity, such as the testimonial slider."
 displayOrder: 1
@@ -8,7 +9,7 @@ displayOrder: 1
 #Content
 roles: "Interaction Design / Front End Development"
 stack: "HTML / CSS / JS"
-external-link: "/"
+external: "https://frontendmentor-manage.vercel.app/"
 background:
   "This project was a front-end  challenge from Frontend Mentor. It’s a platform that
   enables you to practice building websites to a design and project brief. Each challenge

@@ -19,12 +19,12 @@
 
   // FIXME: location of text at top of text input and wrapping
   input[type="textarea"] {
-    // position: relative;
-    // min-block-size: 6em;
+    position: relative;
+    min-block-size: 6em;
 
     &::placeholder {
-      // position: absolute;
-      // inset-block-start: 1em;
+      position: absolute;
+      inset-block-start: 1em;
     }
   }
 

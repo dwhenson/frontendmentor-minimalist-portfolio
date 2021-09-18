@@ -1,11 +1,13 @@
 .site-foot {
   grid-column: 1 / -1;
+  padding-block-start: calc(var(--spacer) * 4);
+  padding-block-end: calc(var(--spacer) * 4);
   background-color: var(--clr-primary-300);
   color: var(--clr-secondary-100);
-  padding-block: calc(var(--spacer) * 4);
 
   @include respond-to("medium") {
-    padding-block: calc(var(--spacer) * 2);
+    padding-block-start: calc(var(--spacer) * 2);
+    padding-block-end: calc(var(--spacer) * 2);
   }
 
   .site-foot__inner {
@@ -27,8 +29,8 @@
   }
 
   .logo path {
-    fill: var(--clr-secondary-100);
     transition: fill 150ms;
+    fill: var(--clr-secondary-100);
 
     &:hover {
       fill: var(--clr-primary-100);

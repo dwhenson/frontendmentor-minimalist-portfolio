@@ -1,7 +1,7 @@
 .project {
   display: grid;
   gap: max(9vh, 3rem);
-  margin-block-start: clamp(2.5rem, 15%, 5rem);
+  // margin-block-start: clamp(2.5rem, 15%, 5rem);
 
   @include respond-to("large") {
     grid-template-rows: auto auto;

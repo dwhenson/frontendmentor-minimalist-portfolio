@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: space-between;
   letter-spacing: normal;
-  padding-block: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
 }
 
 .h2 {
@@ -21,7 +22,8 @@
 .paginate {
   position: relative;
   flex: 1 1 0;
-  padding-block: clamp(1rem, 5%, 2rem);
+  padding-block-start: clamp(1rem, 5%, 2rem);
+  padding-block-end: clamp(1rem, 5%, 2rem);
 
   @include respond-to("medium") {
     padding-inline: clamp(1rem, 5%, 2rem);

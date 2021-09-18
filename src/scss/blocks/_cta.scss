@@ -1,6 +1,7 @@
 .cta {
-  padding-block: calc(var(--spacer) * 5);
   align-items: center;
+  padding-block-start: calc(var(--spacer) * 5);
+  padding-block-end: calc(var(--spacer) * 5);
   text-align: center;
 
   @include respond-to("medium") {

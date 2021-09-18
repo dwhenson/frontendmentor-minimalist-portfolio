@@ -1,7 +1,7 @@
-.button,
-.button.accent:active {
+.button {
   position: relative;
   display: inline-block;
+  -moz-inline-size: fit-content;
   inline-size: fit-content;
   padding-block-start: 0.5em;
   padding-block-end: 0.5em;

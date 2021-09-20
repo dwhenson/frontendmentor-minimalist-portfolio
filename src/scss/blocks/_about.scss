@@ -5,18 +5,19 @@
     --bespoke-gap: clamp(3rem, 20%, 8rem);
 
     align-items: unset;
+    justify-content: unset;
   }
 }
 
 .about-text {
   @include respond-to("medium") {
-    flex: 1 1 60%;
+    // flex: 1 1 60%;
   }
 }
 
 .about-text,
 .about-image {
-  flex: 1 1 0;
+  flex-basis: 50%;
 }
 
 @include respond-to("medium") {

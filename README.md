@@ -26,7 +26,6 @@ Your users should be able to:
 I would very much welcome advice on the following issues:
 
 - ⚠️ Regarding 11ty, I spent a lot of time working out pagination. I thought that content that I put below the last `---` in my .md files would appear in the template I referenced. This didn't happen. I suspect something to do with 11ty's data cascade, but I haven't understood what was happening yet.
-- ⚠️ One thing that has driven me crazy is styling the textarea on the form. I would like the text to wrap, at the moment it just carries on on one line, and I would like to user inputted text to start at the top (in the same location as the placeholder text). I moved the placeholder text, but cannot get the user text to start where I want it to
 
 ## Future learning
 

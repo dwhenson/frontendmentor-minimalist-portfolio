@@ -6,8 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <!-- FIXME title for project pages not working -->
-  <title>{{ title if title else page.fileSlug | capitalize }} - {{ site.name }}</title>
+  <title>{{ title if title else pagination.items[0].template.parsed.name | capitalize }} - {{ site.name }}</title>
 
   <style>{% include "css/critical.css" %}</style>
 
@@ -31,9 +30,6 @@
 {% if formValidation %}
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer/dist/bouncer.polyfills.min.js"></script>
 {% endif %}
-
-
-
 </head>
 
 <body class="align-content flow-section">
@@ -45,10 +41,11 @@
   </main>
 
   {% include "partials/site-foot.html" %}
-</body>
-{% if formValidation %}
-<script>
-  var validate = new Bouncer('form');
-</script>
+
+  {% if formValidation %}
+  <script>
+     var validate = new Bouncer('form');
+  </script>
 {% endif %}
+</body>
 </html>

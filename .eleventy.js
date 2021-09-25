@@ -1,3 +1,5 @@
+const util = require("util");
+
 module.exports = (config) => {
   const sortByDisplayOrder = require("./src/utils/sort-by-display-order.js");
 
@@ -11,6 +13,10 @@ module.exports = (config) => {
 
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   config.setUseGitIgnore(false);
+
+  config.addFilter("dump", (obj) => {
+    return util.inspect(obj);
+  });
 
   return {
     markdownTemplateEngine: "njk",

@@ -2,12 +2,14 @@
   --bespoke-flow-spacer: 1em;
 
   label,
-  input {
+  input,
+  textarea {
     display: block;
     inline-size: 100%;
   }
 
-  input {
+  input,
+  textarea {
     padding-block-start: clamp(0.5rem, 2.5%, 1rem);
     padding-block-end: clamp(0.5rem, 2.5%, 1rem);
     padding-inline-start: clamp(1rem, 5%, 2rem);
@@ -17,10 +19,8 @@
     background-color: var(--clr-secondary-200);
   }
 
-  // FIXME: location of text at top of text input and wrapping
-  input[type="textarea"] {
+  textarea {
     position: relative;
-    min-block-size: 6em;
 
     &::placeholder {
       position: absolute;
@@ -34,12 +34,11 @@
   }
 
   .error {
-    border: 1px solid var(--clr-error-100);
+    outline: 1px solid var(--clr-error-100);
   }
 
   .error-message {
     font-size: 1em;
-    font-style: italic;
     line-height: 1;
     color: var(--clr-error-100);
   }

@@ -10,6 +10,7 @@
 /* Base Styles
    ================================================== */
 body {
+  overflow-x: hidden;
   background-color: var(--clr-secondary-100);
   font-family: "Public Sans", sans-serif;
   font-size: var(--step-0);
